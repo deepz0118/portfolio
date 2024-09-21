@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 ul li{
+    @apply px-3;
+}
+.bg-primary{
+    background: rgb(10, 10, 10);
+}
