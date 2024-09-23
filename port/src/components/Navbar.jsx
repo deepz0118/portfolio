@@ -11,7 +11,7 @@ export default function Header() {
     <nav className='hidden md:block'>
     <ul className='flex  font-medium'>
         <li><a href='#'>Home</a></li>
-        <li><a href='#'>About</a></li>
+        <li><a href='../pages/About.jsx'>About</a></li>
         <li><a href='#'>Skills</a></li>
         <li><a href='#'>Projects</a></li>
         <li><a href='#'>Contact</a></li>
