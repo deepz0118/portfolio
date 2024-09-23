@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Header() {
     const [Menu,setMenu]=useState(false);
   return (
-    <h1 className='flex justify-between px-5 bg-primary text-teal-300  font-bold'>
+    <h1 className='flex justify-between px-6 bg-sec text-2xl h-14 text-teal-300  font-bold'>
     <a href='#'>Deepika P</a>
     <nav className='hidden md:block'>
     <ul className='flex  font-medium'>
@@ -15,7 +15,7 @@ export default function Header() {
         <li><a href='#'>Skills</a></li>
         <li><a href='#'>Projects</a></li>
         <li><a href='#'>Contact</a></li>
-        <button><SquareUserRound className='text-teal-300 h-5'/></button>
+        <button className='text-4xl'><SquareUserRound className='text-teal-300 h-5'/></button>
         </ul>    
     </nav>
     {Menu && <nav className='block md:hidden'>
