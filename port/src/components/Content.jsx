@@ -16,7 +16,7 @@ export default function Content() {
           <a href='#' className=' hover:text-teal-300'><Phone /></a>
         </div>
       </div>
-        <img className='gap-2 w-50 h-96 'src={MyImg} />
+        <img className='gap-2 w-96 h-96 size-8 img'src={MyImg} />
     </section>
   )
 }

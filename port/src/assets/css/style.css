@@ -11,3 +11,6 @@ h1 ul li{
 .bg-sec{
     background: black;
 }
+.img{
+    border-radius: 50%;
+}
