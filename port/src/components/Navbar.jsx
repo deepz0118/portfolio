@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, SquareMenu } from 'lucide-react';
+import { SquareMenu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { SquareUserRound } from 'lucide-react';
 import { useState } from 'react';
 
@@ -9,13 +10,13 @@ export default function Header() {
     <h1 className='flex justify-center px-6 bg-sec text-2xl h-14 text-teal-300  font-bold'>
     
     <nav className='hidden md:block'>
-    <ul className='flex  font-medium'>
-        <li><a href='#'>Home</a></li>
+    <div className='flex  font-medium flex-row gap-8'>
+        <Link to={'/'} ><button type="button">Home</button></Link>
        <Link to={'/About'} ><button type="button">About</button></Link>
-        <li><a href='#'>Skills</a></li>
-        <li><a href='#'>Projects</a></li>
-        <li><a href='#'>Contact</a></li>
-        </ul>    
+       <Link to={'/Project'} ><button type="button">Project</button></Link>
+       <Link to={'/Skills'} ><button type="button">Skills</button></Link>
+       <Link to={'/Contact'} ><button type="button">Contact</button></Link>
+        </div>    
     </nav>
     {Menu && <nav className='block md:hidden'>
     <ul className='flex flex-col font-medium fixed top-10 w-full h-1/3 bg-black left-0 text-center border-b-2'>
