@@ -2,14 +2,21 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Content from './components/Content'
 import About from './pages/About'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Projects from './pages/Projects'
 function App() {
   return (
     <div className="App">
-    <Navbar/>
-    <Content/>
-    <About/>
-    <Projects/>
+      <BrowserRouter>
+       <Navbar/>
+       <Routes>
+
+       <Route path='/' element={<Content/>}/>
+      <Route path='/About' element={<About/>}/>
+      <Route path='/Project' element={<Projects/>}/>
+       </Routes>
+      </BrowserRouter>
     </div>
   )
 }

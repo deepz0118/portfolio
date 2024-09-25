@@ -1,5 +1,5 @@
 import React from 'react'
-import { SquareMenu } from 'lucide-react';
+import { Link, SquareMenu } from 'lucide-react';
 import { SquareUserRound } from 'lucide-react';
 import { useState } from 'react';
 
@@ -11,7 +11,7 @@ export default function Header() {
     <nav className='hidden md:block'>
     <ul className='flex  font-medium'>
         <li><a href='#'>Home</a></li>
-        <li><a href='About.jsx'>About</a></li>
+       <Link to={'/About'} ><button type="button">About</button></Link>
         <li><a href='#'>Skills</a></li>
         <li><a href='#'>Projects</a></li>
         <li><a href='#'>Contact</a></li>
