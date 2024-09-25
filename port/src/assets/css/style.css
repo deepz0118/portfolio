@@ -14,3 +14,11 @@ h1 ul li{
 .img{
     border-radius: 50%;
 }
+.font{
+    font-size: 6rem;
+    text-shadow:0cap;
+    text-shadow: 2px 2px teal-400;
+}
+.project{
+    @apply absolute left-0 right-0 bottom-0 top-0 bg-black text-white opacity-0 duration-500 hover:opacity-100;
+}

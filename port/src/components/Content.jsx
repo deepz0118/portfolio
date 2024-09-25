@@ -1,22 +1,24 @@
 import React from 'react'
-import MyImg from '../assets/img/mypic.jpg';
-import { Linkedin } from 'lucide-react';
-import { Mail } from 'lucide-react';
-import { Phone } from 'lucide-react';
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { TbPhoneCalling } from "react-icons/tb";
+import { ImMail4 } from "react-icons/im";
+import { FaHackerrank } from "react-icons/fa6";
 export default function Content() {
   return (
     <section className='flex flex-col md:flex-row px-5 py-32 bg-sec justify-center'>
       <div className='w-2/3 flex-col'>
-      <h1 className='text-teal-300 text-4xl  font-new-font'>Hi, <br/> Im Deepika P
+      <h1 className='text-teal-300 font  font-new-font'>Hey, Im Deepika P!
         <p className='text-2xl'>Im a CSE(Cyber Security) Student</p>
         </h1>
-        <div className='flex text-white py-8 '>
-          <a href='#' className='pr-4 hover:text-teal-300'><Linkedin /></a>
-          <a href='#' className=' pr-4 hover:text-teal-300'><Mail /></a>
-          <a href='#' className=' hover:text-teal-300'><Phone /></a>
+        <div className='flex text-white py-9 '>
+          <a href='#' className='pr-4 hover:text-teal-300 text-2xl'><IoLogoLinkedin /></a>
+          <a href='#' className=' pr-4 hover:text-teal-300 text-2xl'><ImMail4 /></a>
+          <a href='#' className='pr-4 hover:text-teal-300 text-2xl'><FaGithub /></a>
+          <a href='#' className=' pr-4 hover:text-teal-300 text-2xl'><TbPhoneCalling /></a>
+          <a href='#' className=' hover:text-teal-300 text-2xl'><FaHackerrank /></a>
         </div>
       </div>
-        <img className='gap-2 w-96 h-96 size-8 img'src={MyImg} />
     </section>
   )
 }

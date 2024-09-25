@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily:{
-      'new-font':"Sofadi One"
+      'new-font':"Medium 500 Italic"
     }
   },
   plugins: [],

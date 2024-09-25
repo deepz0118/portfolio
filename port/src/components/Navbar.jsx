@@ -6,16 +6,15 @@ import { useState } from 'react';
 export default function Header() {
     const [Menu,setMenu]=useState(false);
   return (
-    <h1 className='flex justify-between px-6 bg-sec text-2xl h-14 text-teal-300  font-bold'>
-    <a href='#'>Deepika P</a>
+    <h1 className='flex justify-center px-6 bg-sec text-2xl h-14 text-teal-300  font-bold'>
+    
     <nav className='hidden md:block'>
     <ul className='flex  font-medium'>
         <li><a href='#'>Home</a></li>
-        <li><a href='../pages/About.jsx'>About</a></li>
+        <li><a href='About.jsx'>About</a></li>
         <li><a href='#'>Skills</a></li>
         <li><a href='#'>Projects</a></li>
         <li><a href='#'>Contact</a></li>
-        <button className='text-4xl'><SquareUserRound className='text-teal-300 h-5'/></button>
         </ul>    
     </nav>
     {Menu && <nav className='block md:hidden'>
@@ -28,7 +27,7 @@ export default function Header() {
         <li><a href='#'>Login</a></li>
         </ul>
         </nav>}
-    <button onClick={()=>setMenu(!Menu)}className='block md:hidden'><SquareMenu className='text-teal-300 h-5 right-2'/></button>
+    <button onClick={()=>setMenu(!Menu)}className='block md:hidden'><SquareMenu className='text-teal-300 h-5 justify-between right-2'/></button>
     </h1>
   )
 }
